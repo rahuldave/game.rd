@@ -17,5 +17,6 @@ jobs:
       - name: Push to dokku
         uses: dokku/github-action@master
         with:
+          branch: main
           git_remote_url: 'ssh://dokku@rahuldave.us:22/gamerd'
           ssh_private_key: ${{ secrets.RAHULDAVE_PRIVATE_KEY }}
